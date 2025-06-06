@@ -11,7 +11,7 @@ const buttonVariants = cva(
       variant: {
         default: "bg-[#00ff99] text-primary hover:bg-[#02b86f]",
         primary: "bg-primary text-white",
-        outline: "border border-accent bg-transparent text-[#00ff99] hover:bg-[#02b86f] hover:text-primary",
+        outline: "border border-accent bg-transparent text-[#00ff99] hover:bg-[#02b86f] hover:text-primary ",
 
           
       },
