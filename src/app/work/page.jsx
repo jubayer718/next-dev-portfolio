@@ -17,6 +17,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 
+// components
+import WorkSliderBtns from '@/components/WorkSliderBtns';
+
 const projects = [
   {
     num: "01",
@@ -46,7 +49,7 @@ const projects = [
     category: "Fullstack",
     description: "This project is a crowdfunding platform designed to help individuals, startups, and communities raise funds for their ideas. Users can create campaigns, contribute to causes they believe in, and track progress—all in a seamless and user-friendly interface.",
     stack: [{ name: "React.js" }, { name: "Express.js" }, { name: "Tailwind.css" }, { name: "MongoDB" }],
-    image: '/assets/work/crowd_funding.png',
+    image: '/assets/work/project3.png',
     live: "https://crowd-funding-85c71.web.app/",
     github: "https://github.com/jubayer718/crowdfund-client",
     
@@ -66,7 +69,7 @@ const Work = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{ opacity: 1, transition:{delay:2.4, ease:"easeIn" } }}
       className='min-h-[80vh] flex-col justify-center py-12 xl:px-0'
     >
       <div className='container mx-auto'>
@@ -85,7 +88,7 @@ const Work = () => {
               {/* project description */}
               <p className='text-white/60'>{project.description}</p>
               {/* stack */}
-              <ul className='flex gap-4'>
+              <ul className='flex flex-wrap gap-4'>
                 {
                   project.stack.map((item, index) => {
                     return (
@@ -149,7 +152,9 @@ const Work = () => {
                 return (<SwiperSlide key={index} className='w-full'>
                   <div className='h-[460px] relative group flex justify-center items-center bg-pink-50/20'>
                     {/* overlay */}
-                    <div></div>
+                    <div className='absolute top-0 bottom-0 w-full h-full bg-black/10 z-10'>
+
+                    </div>
                     {/* Image */}
                     <div className='relative w-full h-full '>
                       <Image
@@ -164,6 +169,8 @@ const Work = () => {
                   
                 </SwiperSlide>)
               })}
+              {/* slider buttons */}
+              <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-[#00ff99] hover:bg-[#00ff99] text-primary text-[22px] w-[44px] flex justify-center items-center py-2"/>
            </Swiper>
 
           </div>
