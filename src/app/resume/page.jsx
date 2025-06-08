@@ -100,6 +100,11 @@ const education = {
       degree: "Complete Web Development Bootcamp",
       duration: "2024"
     },
+    {
+      institution: "Programming Hero",
+      degree: "Next level Web Development Bootcamp",
+      duration: "2025"
+    },
   ]
 }
 
@@ -155,7 +160,7 @@ const Resume = () => {
       className='min-h-[80vh] flex items-center justify-center py-12 xl:py-0'
     >
       <div className='container px-10 mx-auto'>
-        <Tabs defaultValue="experience"
+        <Tabs defaultValue="education"
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
