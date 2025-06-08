@@ -6,6 +6,7 @@ import { FiDownload } from "react-icons/fi"
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import Link from "next/link";
 const Home = () => {
   return (
     <section className="h-full">
@@ -27,7 +28,7 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <span>Download Resume</span>
+                <Link href="/https://drive.google.com/file/d/1S04Z8ZYTIqKmYnAjhryXWyzVXhyjUFdX/view?usp=sharing">Download Resume</Link>
                 <FiDownload className="text-xl"/>
               </Button>
               <div className="mb-8 xl:mb-0">
