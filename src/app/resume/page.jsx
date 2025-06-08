@@ -59,41 +59,41 @@ import { motion } from 'framer-motion'
 //experience Data
 // TODO
 
-const experience = {
+// const experience = {
 
-  title: "My Experience",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, possimus.",
+//   title: "My Experience",
+//   description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, possimus.",
 
-  item: [
-    {
-      position: "Frontend web developer",
-      duration: "2024-2025",
-      company: "PH Tech Lorem ipsum"
-    },
-    {
-      position: "Frontend web developer",
-      duration: "2024-2025",
-      company: "PH Tech Lorem ipsum"
-    },
-    {
-      position: "Frontend web developer",
-      duration: "2024-2025",
-      company: "PH Tech Lorem ipsum"
-    },
-    {
-      position: "Frontend web developer",
-      duration: "2024-2025",
-      company: "PH Tech Lorem ipsum "
-    },
-  ]
-}
+//   item: [
+//     {
+//       position: "Frontend web developer",
+//       duration: "2024-2025",
+//       company: "PH Tech Lorem ipsum"
+//     },
+//     {
+//       position: "Frontend web developer",
+//       duration: "2024-2025",
+//       company: "PH Tech Lorem ipsum"
+//     },
+//     {
+//       position: "Frontend web developer",
+//       duration: "2024-2025",
+//       company: "PH Tech Lorem ipsum"
+//     },
+//     {
+//       position: "Frontend web developer",
+//       duration: "2024-2025",
+//       company: "PH Tech Lorem ipsum "
+//     },
+//   ]
+// }
 
 
 //Education DAta
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quam, dolorem quia placeat laborum veniam.",
+  description: "I began my journey in web development through the Programming Hero Full Stack Bootcamp, gaining hands-on experience in both frontend and backend technologies through real-world projects.",
   item: [
     {
       institution: "Programming Hero",
@@ -159,7 +159,7 @@ const Resume = () => {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
+            {/* <TabsTrigger value="experience">Experience</TabsTrigger> */}
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
@@ -169,7 +169,7 @@ const Resume = () => {
           <div className='min-h-[70vh] w-full'>
 
             {/* experience */}
-            <TabsContent value="experience" className="w-full">
+            {/* <TabsContent value="experience" className="w-full">
               <div className='flex flex-col gap-[30px] text-center xl:text-left'>
                 <h3 className='text-4xl font-bold'>{experience.title}</h3>
                 <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{experience.description}</p>
@@ -185,7 +185,7 @@ const Resume = () => {
                         <span className='text-[#00ff99]'>{expe.duration}</span>
                         <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{expe.position}</h3>
                         <div className='flex items-center gap-3'>
-                          {/* dot */}
+                           dot 
                           <span className='w-[6px] h-[6px] rounded-full bg-[#00ff99]'></span>
                           <p className=''>{expe.company}</p>
                         </div>
@@ -200,7 +200,7 @@ const Resume = () => {
               </div>
 
             </TabsContent>
-
+ */}
 
             {/* education */}
             <TabsContent value="education" className="w-full">

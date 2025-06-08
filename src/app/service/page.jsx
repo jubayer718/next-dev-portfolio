@@ -13,19 +13,19 @@ const services = [
   },
   {
     num: '02',
-    title: 'UI/UX Design',
+    title: 'AI Integration',
     description: "This is service Page Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cupiditate laudantium tempore.eligendi tempore nostrum.",
     href: ""
   },
   {
     num: '03',
-    title: 'Logo Design',
+    title: 'UI/UX Design',
     description: "This is service Page Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cupiditate laudantium tempore.eligendi tempore nostrum.",
     href: ""
   },
   {
     num: '04',
-    title: 'AI Integration',
+    title: 'Logo Design',
     description: "This is service Page Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cupiditate laudantium tempore.eligendi tempore nostrum.",
     href: ""
   },
