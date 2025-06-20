@@ -54,6 +54,17 @@ const projects = [
     github: "https://github.com/jubayer718/crowdfund-client",
     
   },
+  {
+    num: "04",
+    title:"Project 4",
+    category: "Fullstack",
+    description: "This is a modern, full-stack tech blog platform built with Next.js and TypeScript, featuring seamless content management, fast performance, and scalable architecture. It uses RTK Query for efficient data fetching and caching, and stores blog posts, users, and metadata in a PostgreSQL database hosted on Neon. Ideal for developers and tech writers looking to publish and manage articles with a clean, responsive interface.",
+    stack: [{ name: "Next.js" },{name:"Typescript"},{ name: "Tailwind.css" }, { name: "PSQL" },{name:"RTK query"},{name:"Neon Database"}],
+    image: '/assets/work/project4.png',
+    live: "https://bug-to-blog.vercel.app/blog/feed/1",
+    github: "https://github.com/jubayer718/bug-to-blog",
+    
+  },
 ]
 
 const Work = () => {
